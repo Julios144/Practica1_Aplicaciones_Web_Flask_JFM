@@ -1,0 +1,31 @@
+{% extends 'principal.html' %}
+{% block content %}
+    <h1>Servicios</h1>
+    <p>En DATATEL participamos activamente en la definición de los servicios de nuestros clientes, tomando en cuenta nuestra experiencia y conocimiento directo de las necesidades actuales de las compañías en materia de telecomunicaciones, y de cuáles son las mejores soluciones a esas necesidades. Dentro de la alianza que hacemos con nuestros clientes, vamos más allá que la propia venta de los servicios, cumplimos fielmente los compromisos adquiridos.
+
+ 
+
+        Los servicios de DATATEL, permiten interconectar sus sedes a velocidades entre 64 Kbit/s y 10 Gbit/s, con capacidad de redireccionamiento automático y redundancia en situaciones de fallos, y contando además con una supervisión total de la red.</p>
+    <div>
+        <br><br>
+        <h3>Servicios: Transmisión de Datos</h3>
+        <p>Punto a Punto / Multipunto<br><br>
+            Los Servicios “PUNTO A PUNTO/MULTIPUNTO” de Datatel SRL están orientados a cubrir las necesidades de interconexión de las empresas de manera eficiente y sencilla.
+            
+            Datatel pone a su disposición su infraestructura de red que le permitirá transmitir datos con alta disponibilidad, seguridad y confiabilidad. La interconexión de las locaciones se realiza mediante enlaces de Fibra Óptica con conexión directa a los nodos del Backbone de Datatel, permitiendo acceder a mayores velocidades de transferencia, y a una mejor prestación del servicio.
+            </p>
+            <button class="btn btn-link">Leer más</button><br><br>
+        <img src="{{ url_for('static', filename='images/servicio1.jpg') }}" alt="ervicios: Transmisión de Datos">
+    </div>
+    <div>
+        <br><br>
+        <h3>Servicios: Internet</h3>
+        <p>Los servicios de Internet de DATATEL  están diseñados para ofrecer una solución de calidad al cliente empresarial.
+
+ 
+
+            Le ofrecemos un servicio de ADSL a su medida. Si lo prefiere puede  disponer de un  ACCESO DEDICADO con la máxima calidad de conexión.</p>
+        <button class="btn btn-link">Leer más</button><br><br>
+        <img src="{{ url_for('static', filename='images/servicio2.jpg') }}" alt="Servicios: Internet">
+    </div>
+{% endblock %}

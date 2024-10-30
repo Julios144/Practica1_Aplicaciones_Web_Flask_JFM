@@ -1,0 +1,32 @@
+{% extends 'principal.html' %}
+{% block content %}
+    <h3>Atención al cliente</h3>
+    <form action="{{url_for('contacto')}}" method="POST">
+        <label for="">Nombre: </label>
+        <input type="text" name="nombre"><br><br>
+        <label for="">Correo: </label>
+        <input type="text" name="correo"><br><br>
+        <label for="">Mensaje: </label>
+        <input type="text" name="mensaje"><br><br>
+        
+        <input type="submit">
+    </form>
+
+    <br>
+    <p>Datos Recibidos:</p>
+    <p>Nombre: {{nom}}</p>
+    <p>Correo: {{co}}</p>
+    <p>Mensaje: {{mensa}}</p>
+    
+    <a href="{{ url_for('index')}}">Volver a inicio</a>
+
+          
+    <br><br><br>
+    <h3>Contacto</h3>
+    <p>Dirección: Calle San Jose # 54321</p>
+    <p>Teléfono: 2830898</p>
+    <p>Email: delta@gmail.com</p>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345080495!2d144.9537353153164!3d-37.816279979751224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f1d0c07%3A0x2e4b0e3ee5d29eb2!2sCalle%20Ficticia%20123%2C%20Melbourne%20VIC%2C%20Australia!5e0!3m2!1ses!2ses!4v1602751462000!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+{% endblock %}
