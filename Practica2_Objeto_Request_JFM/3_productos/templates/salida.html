@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salida3</title>
+</head>
+<body>
+    <h1>Datos Recibidos</h1>
+    <p>Producto: {{pro}}</p>
+    <p>Categoria: </p>
+    {% if cate%}
+    <ul>
+        {%for item in cate%}
+        <li>{{ item }}</li>
+        {%endfor%}
+    </ul>
+    {%endif%}
+    <p>Existencia: {{exis}}</p>
+    <p>Precio: {{pre}}</p>
+
+    <a href="{{ url_for('index')}}">Volver a inicio</a>
+
+    
+</body>
+</html>
